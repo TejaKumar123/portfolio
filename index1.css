@@ -35,7 +35,7 @@ body,html{width:100%;height:100%;background-color:var(--bgcolor);}
 #header li{list-style-type:none;}
 #header > div:first-child{border:none;min-width:100px;height:50px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-left:20px;color:var(--txtcolor);}
 #header > div:first-child > img{border-radius:50%;width:40px;}
-#header > div:first-child > li{margin-left:20px;font-size:120%;user-select:none;}
+#header > div:first-child > li{margin-left:20px;font-size:120%;user-select:none;pointer-events:none;}
 #header > div:nth-child(2){border:none;min-width:100px;height:50px;display:none;flex-direction:row;align-items:center;justify-content:space-between;gap:25px;color:var(--txtcolor);user-select:none;position:absolute;left:50%;transform:translateX(-50%);}
 #header > div:nth-child(2) > li{font-size:120%;position:relative;cursor:pointer;}
 #header > div:nth-child(2) > li::before{position:absolute;content:"";width:0%;height:2px;bottom:-3px;background-color:var(--txtcolor);transition:0.4s;right:0px;border-radius:5px;box-shadow:0px 2px 6px var(--txtcolor);}
