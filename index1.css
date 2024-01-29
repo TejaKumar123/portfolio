@@ -30,7 +30,7 @@
 	src:url("fonts/NetflixSans_W_Rg.woff2");
 }
 
-#scrollbar{width:100%;height:4px;border:none;background-color:var(--txtcolor);position:fixed;top:0px;left:0px;z-index:3;animation:grow 2s linear;animation-timeline:scroll(y);}
+#scrollbar{width:100%;height:4px;border:none;background-color:var(--txtcolor);position:fixed;top:0px;left:0px;z-index:3;animation:grow linear;animation-timeline:scroll(y);}
 @keyframes grow{
 	from{width:0%;}
 	to{width:100%;}
