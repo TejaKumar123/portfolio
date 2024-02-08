@@ -1,4 +1,18 @@
 
+
+window.addEventListener("load",()=>{
+	if(Object.keys(localStorage).indexOf("portfolio123theme")==-1){
+		localStorage.setItem("portfolio123theme","light")
+	}
+	else{
+		if(localStorage.getItem("portfolio123theme")=="dark"){
+			localStorage.setItem("portfolio123theme","light");
+			document.getElementById("header").children[2].click();
+		}
+	}
+})
+
+
 function mode_change(){
 	let ele=document.getElementById("mode");
 	let rot=document.querySelector(":root");
@@ -35,17 +49,24 @@ function scrol_up(){
 	}
 }
 
-window.addEventListener("load",()=>{
-	if(Object.keys(localStorage).indexOf("portfolio123theme")==-1){
-		localStorage.setItem("portfolio123theme","light")
+var name_text="Teja Kumar Narayana"
+var nfl=0;
+var nele=document.getElementById("nameintro")
+
+setTimeout(nintro,100)
+
+function nintro(){
+	if(nfl<name_text.length){
+		nele.innerHTML+=name_text[nfl];
+		nfl++;
+		setTimeout(nintro,100)
 	}
-	else{
-		if(localStorage.getItem("portfolio123theme")=="dark"){
-			localStorage.setItem("portfolio123theme","light");
-			document.getElementById("header").children[2].click();
-		}
-	}
-})
+	
+}
+
+
+
+
 
 
 
