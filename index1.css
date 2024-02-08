@@ -80,12 +80,12 @@ hr{border:none;width:70%;height:3px;background-color:#343434;margin:auto;border-
 
 #about{border:none;padding:50px 20px;min-height:300px;}
 #about > h1{color:blue;text-align:left;font-size:250%;font-family:portf4;}
-#about > p{color:var(--txtcolor);font-size:120%;margin-top:20px;text-align:left;line-height:1.5;font-family:portf4;animation:opa-in linear forwards;animation-timeline:view();animation-range:entry;}
-@keyframes opa-in{
+#about > p{color:var(--txtcolor);font-size:120%;margin-top:20px;text-align:left;line-height:1.5;font-family:portf4;/*animation:opa-in linear forwards;animation-timeline:view();animation-range:entry;*/}
+/*@keyframes opa-in{
 	from{opacity:0;}
 	to{opacity:1;}
 
-}
+}*/
 
 #skills{border:none;padding:50px 20px;min-height:200px;}
 #skills > h1{color:blue;text-align:left;font-size:240%;font-family:portf4;}
