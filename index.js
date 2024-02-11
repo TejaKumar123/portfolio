@@ -82,7 +82,7 @@ function iconscrol(event){
 	if(ele.scrollLeft==0){
 		parent.children[1].style.display="none";
 	}
-	else if(ele.scrollLeft+ele.clientWidth>=ele.children[0].clientWidth){
+	else if(ele.scrollLeft+ele.offsetWidth>=ele.children[0].clientWidth){
 		parent.children[2].style.display="none";
 	}
 	else{
