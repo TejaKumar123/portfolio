@@ -72,25 +72,37 @@
 		<div id="projects" class="pdivs">
 			<h1>Projects</h1>
 			<div id="prodiv">
-				<div onclick="location.href='http://tejanet.netlify.app'" style="cursor:pointer;">
-					<img src="images/c.png">
-					<li>Netflix Clone</li>
-				</div>
-				<div onclick="location.href='http://tejaslp.netlify.app'" style="cursor:pointer;">
-					<img src="images/g.png">
-					<li>Student Learning Platform</li>
-				</div>
-				<!---<div onclick="location.href='http://reliefcrafters.netlify.app'" style="cursor:pointer;">
-					<img src="images/f.png">
-					<li>Relief crafters - Relaxoflex Pro</li>
-				</div>--->
 				<div>
-					<img src="images/d.png">
-					<li>Tech World</li>
-				</div>
-				<div>
-					<img src="images/e.png">
-					<li>Productin</li>
+					<div id="inner" onscroll="iconscrol(event)">
+						<div>
+							<div onclick="location.href='http://tejanet.netlify.app'" style="cursor:pointer;">
+								<img src="images/c.png">
+								<li>Netflix Clone</li>
+							</div>
+							<div onclick="location.href='http://tejaslp.netlify.app'" style="cursor:pointer;">
+								<img src="images/g.png">
+								<li>Student Learning Platform</li>
+							</div>
+							<!---<div onclick="location.href='http://reliefcrafters.netlify.app'" style="cursor:pointer;">
+								<img src="images/f.png">
+								<li>Relief crafters - Relaxoflex Pro</li>
+							</div>---->
+							<div>
+								<img src="images/d.png">
+								<li>Tech World</li>
+							</div>
+							<div>
+								<img src="images/e.png">
+								<li>Productin</li>
+							</div>
+						</div>
+					</div>
+					<div id="left" onclick="scrol(event,0)">
+						<span class="material-symbols-outlined">navigate_before</span>
+					</div>
+					<div id="right" onclick="scrol(event,1)">
+						<span class="material-symbols-outlined">navigate_next</span>
+					</div>
 				</div>
 			</div>
 		</div>

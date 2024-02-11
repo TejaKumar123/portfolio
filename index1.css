@@ -12,7 +12,7 @@
 	--modecolor:yellow;/*black*/
 }
 
-::-webkit-scrollbar{display:none;}
+::-webkit-scrollbar{width:0px;height:0px;}
 
 @font-face{
 	font-family:portf1;
@@ -51,7 +51,7 @@ body,html{width:100%;height:100%;background-color:var(--bgcolor);}
 #header > div:nth-child(3) > div{border:2px solid var(--bgcolor);border-radius:100%;position:absolute;padding:2px;top:50%;transform:translateY(-50%);transition:0.1s ease-out;left:-2px;background-color:var(--txtcolor);display:flex;align-items:center;justify-content:center;z-index:2;}
 #header > div:nth-child(3) > div > span{color:var(--modecolor);pointer-events:none;}
 
-#upside{border:none;width:40px;height:40px;background-color:var(--txtcolor);color:var(--bgcolor);border-radius:7px;display:none;align-items:center;justify-content:center;position:fixed;right:20px;bottom:10px;}
+#upside{border:none;width:40px;height:40px;background-color:var(--txtcolor);color:var(--bgcolor);border-radius:7px;display:none;align-items:center;justify-content:center;position:fixed;right:20px;bottom:10px;z-index:10;}
 #upside > span{pointer-events:none;user-select:none;}
 
 .pdivs{width:100%;background-color:;min-height:100%;overflow-x:hidden;}
@@ -94,14 +94,24 @@ hr{border:none;width:70%;height:3px;background-color:#343434;margin:auto;border-
 #skills #skdiv > li{border:1px solid var(--txtcolor);list-style-type:none;font-size:110%;color:var(--txtcolor);background-color:var(--bgcolor);transition:0.2s;min-width:80px;padding:4px 4px;border-radius:7px;text-align:center;cursor:default;user-select:none;font-family:portf4;}
 #skills #skdiv > li:hover{background-color:var(--txtcolor);color:var(--bgcolor);border:1px solid var(--bgcolor);}
 
-#projects{border:none;padding:50px 20px;min-height:400px;}
-#projects > h1{color:blue;text-align:left;font-size:300%;font-family:portf4;}
-#projects #prodiv{border:none;width:100%;min-height:200px;margin-top:25px;display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;flex-wrap:wrap;}
-#projects #prodiv > div{border:1px solid var(--txtcolor);width:350px;min-height:150px;margin-left:0px;margin-right:20px;margin-bottom:20px;padding-bottom:10px;overflow:hidden;border-radius:7px;background-color:var(--bgcolor);transition:0.2s;}
-#projects #prodiv > div > img{width:100%;}
-#projects #prodiv > div > li{color:var(--txtcolor);font-family:portf4;text-align:center;margin-top:5px;list-style-type:none;font-size:140%;font-weight:500;}
-#projects #prodiv > div:hover{background-color:var(--txtcolor);}
-#projects #prodiv > div:hover > li{color:var(--bgcolor);}
+#projects{border:none;padding:50px 10px;min-height:400px;}
+#projects > h1{color:blue;text-align:center;font-size:300%;font-family:portf4;}
+#projects #prodiv{border:none;width:100%;min-height:260px;margin-top:25px;display:flex;flex-direction:row;align-items:center;justify-content:center;flex-wrap:nowrap;overflow:hidden;}
+#projects #prodiv > div{border:none;width:100%;min-height:245px;overflow:hidden;position:relative;}
+#projects #prodiv > div > #left,#projects #prodiv > div > #right{position:absolute;top:50%;transform:translateY(-50%);width:auto;height:auto;padding:8px 8px;background-color:var(--txtcolor);display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:50%;}
+#projects #prodiv > div > #left{left:0px;display:none;}
+#projects #prodiv > div > #left > span{pointer-events:none;transform:scale(1.7,1.7);color:var(--bgcolor);}
+#projects #prodiv > div > #right{right:0px;}
+#projects #prodiv > div > #right > span{pointer-events:none;transform:scale(1.7,1.7);color:var(--bgcolor);}
+/*#projects #prodiv > div::-webkit-scrollbar{width:10px;}*/
+#projects #prodiv > div > #inner{border:none;width:100%;min-height:245px;overflow-y:hidden;overflow-x:auto;}
+#projects #prodiv > div > #inner > div{border:none;min-width:1440px;min-height:240px;display:flex;flex-direction:row;align-items:center;justify-content:space-around;flex-wrap:nowrap;}
+#projects #prodiv > div > #inner > div > div{border:1px solid var(--txtcolor);width:320px;min-height:200px;margin-left:0px;margin-right:0px;margin-bottom:0px;padding-bottom:10px;overflow:hidden;border-radius:7px;background-color:var(--bgcolor);transition:0.2s;}
+#projects #prodiv > div > #inner > div > div > img{width:100%;}
+#projects #prodiv > div > #inner > div > div > li{color:var(--txtcolor);font-family:portf4;text-align:center;margin-top:5px;list-style-type:none;font-size:140%;font-weight:500;}
+#projects #prodiv > div > #inner > div > div:hover{background-color:var(--txtcolor);}
+#projects #prodiv > div > #inner > div > div:hover > li{color:var(--bgcolor);}
+
 
 #courses{display:none;}
 

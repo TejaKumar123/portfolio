@@ -64,7 +64,32 @@ function nintro(){
 	
 }
 
+function scrol(event,num){
+	let ele=event.target;
+	let parent=event.target.parentElement;
+	let clientwidth=parent.children[0].clientWidth;
+	if(!num){
+		parent.children[0].scrollLeft-=clientwidth;	
+	}
+	else{
+		parent.children[0].scrollLeft+=clientwidth;
+	}
+}
 
+function iconscrol(event){
+	let ele=event.target;
+	let parent=event.target.parentElement;
+	if(ele.scrollLeft==0){
+		parent.children[1].style.display="none";
+	}
+	else if(ele.scrollLeft+ele.clientWidth>=ele.children[0].clientWidth){
+		parent.children[2].style.display="none";
+	}
+	else{
+		parent.children[1].style.display="flex";
+		parent.children[2].style.display="flex";
+	}
+}
 
 
 
