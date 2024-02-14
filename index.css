@@ -4,6 +4,7 @@
 	box-sizing:border-box;
 	scroll-behavior:smooth;
 	user-select:none;
+
 }
 
 :root{
@@ -13,6 +14,7 @@
 }
 
 ::-webkit-scrollbar{display:none;}
+::-mz-scrollbar{display:none;}
 
 @font-face{
 	font-family:portf1;
@@ -45,11 +47,14 @@ body,html{width:100%;height:100%;background-color:var(--bgcolor);}
 #header > div:first-child > li{margin-left:20px;font-size:120%;user-select:none;}
 #header > div:nth-child(2){border:none;min-width:100px;height:50px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:25px;color:var(--txtcolor);user-select:none;position:absolute;left:50%;transform:translateX(-50%);}
 #header > div:nth-child(2) > li{font-size:120%;position:relative;cursor:pointer;}
-#header > div:nth-child(2) > li::before{position:absolute;content:"";width:0%;height:2px;bottom:-3px;background-color:var(--txtcolor);transition:0.4s;right:0px;border-radius:5px;box-shadow:0px 2px 6px var(--txtcolor);}
+#header > div:nth-child(2) > li::before{position:absolute;content:"";width:0%;height:2px;bottom:-3px;background-color:var(--txtcolor);transition:0.4s;right:0px;border-radius:5px;box-shado:0px 2px 6px var(--txtcolor);}
 #header > div:nth-child(2) > li:hover::before{width:100%;transition:0.2s;left:0px;}
 #header > div:nth-child(3){border:2px solid var(--txtcolor);min-width:50px;height:23px;margin-right:20px;color:var(--txtcolor);position:relative;border-radius:15px;background-color:var(--bgcolor);user-select:none;}
 #header > div:nth-child(3) > div{border:2px solid var(--bgcolor);border-radius:100%;position:absolute;padding:2px;top:50%;transform:translateY(-50%);transition:0.1s ease-out;left:-2px;background-color:var(--txtcolor);display:flex;align-items:center;justify-content:center;z-index:2;}
 #header > div:nth-child(3) > div > span{color:var(--modecolor);pointer-events:none;}
+#header > div:nth-child(4){display:none;}
+
+#left_bar{display:none;}
 
 #upside{border:none;width:40px;height:40px;background-color:var(--txtcolor);color:var(--bgcolor);border-radius:7px;display:none;align-items:center;justify-content:center;position:fixed;right:20px;bottom:10px;z-index:10;}
 #upside > span{pointer-events:none;user-select:none;}

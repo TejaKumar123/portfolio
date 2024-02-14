@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 		
 	</head>
-	<body onscroll="scrol_up()">
+	<body>
 		
 		<!---<div id="scrollbar">
 		
@@ -21,15 +21,38 @@
 				<li>Teja Kumar</li>
 			</div>
 			<div>
+				<li onclick="scrol_to('home')">Home</li>
 				<li onclick="scrol_to('about')">About</li>
 				<li onclick="scrol_to('skills')">Skills</li>
 				<li onclick="scrol_to('projects')">Projects</li>
 				<li onclick="scrol_to('courses')" style="display:none;">Courses</li>
 			</div>
 			<div onclick="mode_change()">
-				<div id="mode">
+				<div class="mode">
 					<span class="material-symbols-outlined">light_mode</span>
 				</div>
+			</div>
+			<div onclick="open_menu(1)">
+				<span class="material-symbols-outlined">menu</span>
+			</div>
+		</div>
+		
+		<div id="left_bar">
+			<div id="top">
+				<div onclick="mode_change()">
+					<div class="mode">
+						<span class="material-symbols-outlined">light_mode</span>
+					</div>
+				</div>
+				<div onclick="open_menu(0)">
+					<span class="material-symbols-outlined">close</span>
+				</div>
+			</div>
+			<div id="scrol_links">
+				<li>Home</li>
+				<li>About</li>
+				<li>Skills</li>
+				<li>Projects</li>
 			</div>
 		</div>
 		
@@ -65,6 +88,7 @@
 				<li>PHP</li>
 				<li>SQL</li>
 				<li>Flask</li>
+				<li>MongoDb</li>
 				<li>Responsive design</li>
 			</div>
 		</div>
