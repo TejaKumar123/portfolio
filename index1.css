@@ -117,10 +117,10 @@ hr{border:none;width:70%;height:3px;background-color:#343434;margin:auto;border-
 #projects #prodiv > div > #right > span{pointer-events:none;transform:scale(1.7,1.7);color:var(--bgcolor);}
 /*#projects #prodiv > div::-webkit-scrollbar{width:10px;}*/
 #projects #prodiv > div > #inner{border:none;width:100%;min-height:245px;overflow-y:hidden;overflow-x:auto;}
-#projects #prodiv > div > #inner > div{border:none;min-width:1340px;min-height:240px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:20px;}
+#projects #prodiv > div > #inner > div{border:none;min-width:1400px;min-height:240px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:20px;}
 #projects #prodiv > div > #inner > div > div{border:1px solid var(--txtcolor);width:320px;min-height:200px;margin-left:0px;margin-right:0px;margin-bottom:0px;padding-bottom:10px;overflow:hidden;border-radius:7px;background-color:var(--bgcolor);transition:0.2s;}
 #projects #prodiv > div > #inner > div > div > img{width:100%;}
-#projects #prodiv > div > #inner > div > div > li{color:var(--txtcolor);font-family:portf4;text-align:center;margin-top:5px;list-style-type:none;font-size:140%;font-weight:500;}
+#projects #prodiv > div > #inner > div > div > li{color:var(--txtcolor);font-family:portf4;text-align:center;margin-top:5px;list-style-type:none;font-size:120%;font-weight:500;}
 #projects #prodiv > div > #inner > div > div:hover{background-color:var(--txtcolor);}
 #projects #prodiv > div > #inner > div > div:hover > li{color:var(--bgcolor);}
 
